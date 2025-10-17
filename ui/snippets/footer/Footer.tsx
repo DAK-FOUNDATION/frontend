@@ -187,7 +187,7 @@ const Footer = () => {
   if (config.UI.footer.links) {
     return (
       <Box { ...containerProps }>
-        <Grid { ...contentProps }>
+        {/* <Grid { ...contentProps }>
           <div>
             { renderNetworkInfo() }
             { renderProjectInfo() }
@@ -220,14 +220,14 @@ const Footer = () => {
                 ))
             }
           </Grid>
-        </Grid>
+        </Grid> */}
       </Box>
     );
   }
 
   return (
     <Box { ...containerProps }>
-      <Grid
+      {/* <Grid
         { ...contentProps }
         gridTemplateAreas={{
           lg: `
@@ -262,7 +262,7 @@ const Footer = () => {
         >
           { BLOCKSCOUT_LINKS.map(link => <FooterLinkItem { ...link } key={ link.text }/>) }
         </Grid>
-      </Grid>
+      </Grid> */}
     </Box>
   );
 };
